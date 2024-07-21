@@ -1,0 +1,2 @@
+require("kadza")
+print("hello")
