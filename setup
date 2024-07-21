@@ -4,14 +4,4 @@ mkdir -p "$CONFIG_HOME"
 
 ln -sf "$PWD/nvim" "$CONFIG_HOME"/nvim
 
-packages=(
-	ripgrep
-	npm
-)
-
-for package in "${packages[@]}"; do
-	echo "Installing $package..."
-	/home/linuxbrew/.linuxbrew/bin/brew install "$package"
-done
-
 echo "All packages from the setup script have been installed."
