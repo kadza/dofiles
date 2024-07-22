@@ -1,7 +1,8 @@
 #!/bin/bash
 export CONFIG_HOME="$HOME"/.config
 mkdir -p "$CONFIG_HOME"
+mkdir -p "$CONFIG_HOME"/nixpkgs
 
 ln -sf "$PWD/nvim" "$CONFIG_HOME"/nvim
 
-echo "All packages from the setup script have been installed."
+nix-env -iA nixpkgs.myPackages
