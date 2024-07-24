@@ -5,6 +5,9 @@
       paths = [
         neovim
         ripgrep
+        lazygit
+        fd
+        fzf
       ];
     };
   };
